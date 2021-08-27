@@ -70,3 +70,27 @@ def show_all(player, dealer):
     for card in player.cards:
         print(card)
     print(f'Valor da mão do Jogador é: {player.value}')
+
+
+def player_busts(player, dealer, chips):
+    print('Jogador perde!')
+    chips.lose_bet()
+
+
+def player_wins(player, dealer, chips):
+    print('Jogador ganha!')
+    chips.win_bet()
+
+
+def dealer_busts(player, dealer, chips):
+    print('Jogador ganha! Dealer perde!')
+    chips.win_bet()
+
+
+def dealer_wins(player, dealer, chips):
+    print('Dealer ganha! Jogador perde!')
+    chips.lose_bet()
+
+
+def push(player, dealer):
+    print('Empate')
