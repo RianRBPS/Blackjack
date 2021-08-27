@@ -38,3 +38,25 @@ def hit_or_stand(deck, hand):
             print('Desculpe, eu não entedi, por favor informe se deseja continuar ou parar.')
             continue
         break
+
+
+def show_some(player, dealer):
+
+    # dealer.cards[1]
+
+    # Show only ONE of the Dealer´s card
+    print('\n Mão do Dealer: ')
+    print('Primeira carta escondida!')
+    print(dealer.cards[1])
+
+    # Show all (2 cards) of the player´s hand
+    print('\n Mão do jogador: ')
+    for card in player.cards:
+        print(card)
+
+def show_all(player, dealer):
+    pass
+    # Show all the dealer´s cards
+    # Calculate and display value (J+K == 20)
+
+    # Show all the player´s cards
