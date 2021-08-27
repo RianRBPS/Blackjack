@@ -62,3 +62,15 @@ class Hand:
             self.value -= 10
             self.aces -= 1
 
+
+class Chip:
+    def __init__(self, total = 100):
+        self.total = total # Pode ser Default value ou User Input
+        self.bet = 0
+
+    def win_bet(self):
+        self.total += self.bet
+
+    def lose_bet(self):
+        self.total -= self.bet
+
