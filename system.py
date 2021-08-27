@@ -12,3 +12,10 @@ def take_bet(chips):
         else:
             print(f'Desculpe, você não tem fichas o suficiente.\n'
                   f'Fichas atuais: {chips.total}')
+
+
+def hit(deck, hand):
+
+    single_card = deck.deal()
+    hand.add_card(single_card)
+    hand.adjust_for_ace()
