@@ -55,8 +55,18 @@ def show_some(player, dealer):
         print(card)
 
 def show_all(player, dealer):
-    pass
+
     # Show all the dealer´s cards
+    print('\n Mão do Dealer: ')
+    for card in dealer.cards:
+        print(card)
+
+    # print(f'Mão do Dealers: ', *dealer.cards,sep='\n')
     # Calculate and display value (J+K == 20)
+    print(f'Valor da mão do Dealer é: {dealer.value}')
 
     # Show all the player´s cards
+    print('\n Mão do jogador: ')
+    for card in player.cards:
+        print(card)
+    print(f'Valor da mão do Jogador é: {player.value}')
